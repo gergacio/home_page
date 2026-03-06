@@ -38,47 +38,31 @@
         a:link {
         color: white;
         text-decoration: none;
+         opacity: 0.4;
         }
 
         /* visited link */
         a:visited {
 
-        color:#F5F0E8;
+        color:white;
         }
 
         /* mouse over link */
         a:hover {
         color:white;
+         opacity: 1.0;
         }
 
         /* selected link */
         a:active {
         color:  #e05915;
         }
+        .visit {
+            opacity: .7;
+        }
         
 
-@linkBlue: 
-a {
-  color: @linkBlue;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  &:before {
-    background-color: @linkBlue;
-    content: '';
-    height: 2px;
-    position: absolute;
-    bottom: -1px;
-    transition: width 0.3s ease-in-out;
-    width: 100%;
-  }
 
-  &:hover {
-    &:before {
-       width: 0;
-    }
-  }
-}
    
 
     
@@ -195,7 +179,7 @@ a {
                   
             
                     <div>
-                         <p class="ouk"><a href="https://ouk.vercel.app" target="_blank">https://ouk.vercel.app</a></span></p>
+                         <p class="ouk"><span class="visit">visit   </span> <a href="https://ouk.vercel.app" target="_blank">https://ouk.vercel.app</a></span></p>
               
                     </div>
                     <div>
