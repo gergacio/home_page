@@ -27,17 +27,22 @@
             padding: 4vw;
             padding-top: clamp(2rem, 8vw, 4vw);
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 1.5rem;
+          
+            justify-content: center;
+            align-items: center;
+           
         
         }
         .flex {
   
-             display: flex;
-            justify-content: end;
-            font-size:large;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
  
+        }
+        .sign{
+            font-size: x-large;
         }
 
 
@@ -70,6 +75,23 @@
         .text-footer{
             opacity: .6;
         }
+        .ouk {
+            font-size: large;
+        }
+        .outside {
+  width: 400px;
+  height: 400px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inside {
+  background-color: pink;
+  height: 200px;
+  width: 200px;
+}
      
         
 
@@ -90,7 +112,7 @@
         .detail { font-size: clamp(.85rem, 1.3vw, 1.05rem); line-height: 1.5; opacity: .75; }
 
         /* Section colors on containers */
-        .s1 .container { background: #e05915; color: #000;}
+        .s1 .container { background: #e05915; color: #000;} 
         .s1 hr { border-color: #000; opacity: 1; }
         .s2 .container { background: #000; color: #fff; }
         .s3 .container { background: #F5F0E8; color: #000; }
@@ -130,96 +152,34 @@
       
      
 
-        <section class="s3">
-            <div class="container">
-                <p class="tag"><span style="font-size: x-large;">Ꙋ</span>  </p>
-               <hr style="color: white;">
+        <section class="s2">
+          
+           <div class="container">
+                     <div>
+                           <h1> OUK</h1>
+                    </div>
+
+           </div>
+        
+        
+           
+
+
              
-                <div>
-                     
-                    <div class="flex">
-                        <h1 class="big">Georgi</h1>
-                  
-
-                    </div>
-                    <hr>
-                       <div class="flex">
-                   
-                         <h1 class="big">Gospodinov</h1> 
-                        
-                 
-
-                    </div> 
-               
-                    <div class="flex">
-                           <h1>OUK UI</h1>
-                    </div>
-                </div>
-                <hr style="color: white;">
-              
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-              
-
-
-                
-                <hr style="color: white;">
-                <div class="cols">
-                    <div>
-                                             
-              
-                    </div>
-                    <div>
-                      
-                    </div>
-                    <div>
-                   
-                    </div>
-                </div>
-                <hr style="color: white;">
-                <div class="cols">
-
-                    <div>
-                       
-                    
-                   
-                </div>
-               
-                     
-          <div>
-            <hr style="color:#fff">
-          </div>
-
-            </div>
-            <div>
-
-            </div>
+      
             
       
-            <div class="col">
-                  <hr style="color: #fff;">
-            </div>
-              <div class="col">
-                  <hr style="color: #fff;">
-            </div>
+       
         </section>
 
      
 
         <section class="s2">
             <div class="container">
-                <p class="tag">    </p>
+
+              
                
-                <div>
-                    <h2 class="big"><br><br></h2>
-                     
-                </div>
-        
-                  
+                                
             
                     <div>
                          <p class="ouk"> <span class="tag">visit Ꙋ </span> <a class="tag" href="https://ouk.vercel.app" target="_blank">ouk.vercel.app</a></span></p>
@@ -235,14 +195,13 @@
             
            
             
-                <div>
-
-                </div>
+         
                 
       
                 <div class="footer">
-                    <hr>
-                    <p class="text-footer"> © 2026 OUK UI </p>
+             
+                    
+                    <p class="text-footer"> © 2026 GG  </p>
                  </div>
             </div>
         </section>
@@ -266,7 +225,7 @@
             const container = section.querySelector('.container');
 
             if (i > 0) {
-                gsap.set(container, { rotation: 30 });
+                gsap.set(container, { rotation: 0 });
                 gsap.to(container, {
                     rotation: 0,
                     ease: 'none',
