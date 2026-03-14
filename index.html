@@ -134,6 +134,22 @@
             text-align: center;
             padding: 2em;
         }
+        .vlines {
+  position: absolute;
+  top: -20vh;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  opacity: 0.18;
+
+  &__column {
+    border-left: 1px solid #888;
+    flex: 1;
+    height: 110%;
+  }
+}
     </style>
 </head>
 <body>
@@ -147,9 +163,20 @@
             
                     <div>
                         <hr>
-                  
-                         <p class="ouk"> <span class="sub">visit  </span> <a class="sub" href="https://ouk.vercel.app" target="_blank">ouk.vercel.app</a></span></p>
-                               <p class="detail" style="font-style: italic;">A Discovery to Share <span style="font-size: large;">Ꙋ</span></p>
+                         <div class="ouk"> <span class="sub">visit  </span> <a class="sub" href="https://ouk.vercel.app" target="_blank">ouk.vercel.app</a></span></div>
+                       <div>
+                     
+                             <div class="detail"><span style="font-style: oblique;">A Discovery to Share</span>
+                                
+                                
+                                
+                                <span style="font-size: x-large; color: skyblue;">Ꙋ</span>
+                            </div>
+
+                       </div>
+                        
+                 
+                     
                         
                     </div>
                     <div>
