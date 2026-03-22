@@ -137,6 +137,12 @@
             text-align: center;
             padding: 2em;
         }
+        .flex {
+            display: flex;
+            flex-direction: row;
+            
+            justify-content:space-evenly;
+        }
         .vlines {
   position: absolute;
   top: -20vh;
@@ -164,7 +170,12 @@
 
 
         <section class="s2">
+           <div class="bottom">
+
+                                       <div id="time" class="details" style="padding: 6px; font-size: small;"> </div>
+           </div>
             <div class="container">
+                 
 
                              
             
@@ -194,18 +205,25 @@
            
             
          
-                    
       
                  
-                <div class="bottom">
+                <div  class="bottom flex">
                     
                     
                              
-                    
-             
+                
+                                        
          
-                   <div id="time" class="details opacity" style="padding: 6px; font-size: small;"></div> 
-                  <span class="details opacity" style="padding: 6px; font-size: small;"> © Gospodinov G. LinkedIn GitHub </span> 
+
+                  
+                 
+
+        
+              
+                  <div class="details opacity" style="padding: 6px; font-size: small;"> © 2026 Gospodinov G.</div >
+
+              
+                        
                     
                             
 
@@ -220,11 +238,11 @@
        <script>
         function updateTime() {
             const date = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const options = { month: 'long', day: 'numeric' };
             const time = date.toLocaleTimeString();
             const day = date.toLocaleDateString(undefined, options);
             document.getElementById('time').innerHTML =
-                `${day} ${time}`;
+                ` GMT ${time}`;
         }
 
         setInterval(updateTime, 1000);
