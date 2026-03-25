@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Georgi G. | IT | London</title>
+    <title>Gospodinov IT London</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .note {
-         --note-bg: #0000ee;; /* local scope */
-        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         ::-webkit-scrollbar { display: none; }
         html { scrollbar-width: none; }
@@ -21,6 +17,16 @@
             min-height: 100vh;
             overflow: hidden;
         }
+                .ouk {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            font-size:larger;
+            text-align: center;
+            padding: 2em;
+        }
         .container {
             position: relative;
             width: 100%;
@@ -28,35 +34,40 @@
             padding: 4vw;
             padding-top: clamp(2rem, 8vw, 4vw);
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.5rem;
           
-            justify-content: center;
-            align-items: center;
-           
-        
-        }
-        .flex {
-  
-        
-            display: flex;
-            align-items:end;
-            justify-content:space-between;
- 
-        }
-        .sign{
-            font-size: x-large;
-        }
-        .footer-text{
-            font-size:xx-small;
+            
         }
 
+        .big { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 10vw, 12rem); font-weight: 400; line-height: .85; text-transform: uppercase; letter-spacing: -.02em; }
+        .sub { font-size: clamp(1rem, 2.5vw, 2rem); max-width: 50ch; line-height: 1.4; font-weight: 400; }
+        .tag { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; }
+        .right { text-align: right; align-self: flex-end; }
+        .bottom { margin-top: auto; }
+        hr { border: none; border-top: 1px solid currentColor; opacity: .6; margin: 2vw 0; }
+        .cols { display: flex; gap: 3vw; flex-wrap: wrap; }
+        .cols > div { flex: 1; min-width: 180px; }
+        .label { font-weight: 700; font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .5rem; }
+        .detail { font-size: clamp(.85rem, 1.3vw, 1.05rem); line-height: 1.5; opacity: .75; }
 
-   
+        /* Section colors on containers */
+        .s1 .container { background: #E85A2B; color: #000; }
+        .s1 hr { border-color: #000; opacity: 1; }
+        .s2 .container { background: #000; color: #fff; }
+        .s3 .container { background: #F5F0E8; color: #000; }
+        .s4 .container { background: #1A3DE8; color: #fff; }
+        .s4 hr { border-color: rgba(255,255,255,.5); }
+        .s5 .container { background: #E8E02B; color: #000; }
+
+
 
             /* unvisited link */
         a:link {
         color: white;
         text-decoration: none;
-         opacity: 0.8;
+         opacity: 0.7;
         }
 
         /* visited link */
@@ -76,173 +87,134 @@
         color:  white;
         opacity: 1;
         }
-        .text-footer{
-            opacity: .9;
-        }
-        .ouk {
-            font-size: large;
-        }
-
-
-     
-        
-
-
-   
-
-    
-
-        .big { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 12vw, 14rem); font-weight: 400; line-height: .85; text-transform: uppercase; letter-spacing: -.02em; }
-        .sub { font-size: clamp(1rem, 2.5vw, 2rem); max-width: 50ch; line-height: 1.4; font-weight: 400; }
-        .tag { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; }
-        .right { text-align: right; align-self: flex-end; }
-        .bottom { margin-top: auto; background: #000; color: #fff;}
-        hr { border: none; border-top: 1px solid currentColor; opacity: .6; margin: 2vw 0; }
-        .cols { display: flex; gap: 3vw; flex-wrap: wrap; }
-        .cols > div { flex: 1; min-width: 180px; }
-        .label { font-weight: 700; font-size: .95rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .5rem; }
-        .detail { font-size: clamp(.85rem, 1.3vw, 1.05rem); line-height: 1.5; opacity: .75; }
-
-        /* Section colors on containers */
-        .s1 .container { background: #e05915; color: #000;} 
-        .s1 hr { border-color: #000; opacity: 1; }
-        .s2 .container { background: #000; color: #fff; }
-        .s3 .container { background: #F5F0E8; color: #000; }
-        .s4 .container { background: #431c5d; color: #fff; }
-        .s4 hr { border-color: rgba(255,255,255,.5); }
-        .s5 .container { background: #cdd422; color: #000; }
-
-      .footer {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: black;
-            color: white;
-            text-align: left;
-            padding: 12em;
-          
-            
-        }
-        .opacity {
-            opacity: .8;
-        }
-         .ouk {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: black;
-            font-size:larger;
-            text-align: center;
-            padding: 2em;
-        }
-        .flex {
-            display: flex;
-            flex-direction: row;
-            
-            justify-content:space-evenly;
-        }
-        .vlines {
-  position: absolute;
-  top: -20vh;
-  left: 0;
-  z-index: -1;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  opacity: 0.18;
-
-  &__column {
-    border-left: 1px solid #888;
-    flex: 1;
-    height: 110%;
-  }
-
-
-}
     </style>
 </head>
 <body>
     <main>
 
-    
-
+ 
 
         <section class="s2">
-           <div class="bottom flex">
-
-                                   
-       <div>
-
-        
-
-       </div>
-                                     
-                        <div id="time" class="details" style="padding: 15px; font-size: small;"> </div>
-           </div>
             <div class="container">
-                 
 
-                             
-            
-                    <div flex>
-                      
-                         <div class="ouk"> <a class="big" href="https://ouk.vercel.app" target="_blank">ouk.vercel.app</a></span></div>
-                              <div  class=" sub right"><span style="opacity: .7;">A Discovery to Share </span> <span style="color: red;">Ꙋ</span>
-                 
+                        <div id="time" class="details" style="padding: 15px; font-size: small;"> </div>
+           
+           
+                
+                <div class="cols">
+                    <div>
+                    
+                    </div>
+                    <div>
 
-                       </div>
-                        
-                 
+                    </div>
+                    <div>
                      
-                        
-                    </div>
-                    <div>
-                      
-                    </div>
-                    <div>
-                 
                     </div>
                 </div>
+             
+                <div class="cols">
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                     <div>
+                    <h2 class="ouk"> <a class="big" href="https://ouk.vercel.app" target="_blank">https://OUK.Vercel.App</a></h2>
+
+                                        <p class="sub right">A Discovery To Share <span style="color: red; font-size: larger;">Ꙋ</span></p>
+
+                </div>
+                
                 <div>
 
                 </div>
-            
+                     <hr>
            
-            
+            </div>
+           
+           
+        </section>
          
-      
-                 
-                <div  class="bottom flex">
-                  <div class="details opacity" style="padding: 6px; font-size: small;"> © 2026 Gospodinov G. </div >
-
+           <section class="s2">
+           
+            <div class="container">
+             
+                
+                <div>
               
+                </div>
+                
+                <div>
+              
+                </div>
+           
+                <div class="cols">
+                    <div>
+                           <p class="label">Gospodinov G.</p> 
+                    </div>
+                    <div>
+                  
                         
-                    
-                            
-
-
-                 
+                    </div>
+                    <div>
                    
+                    </div>
+                </div>
+               
+                <div class="cols" >
+                    <div style="color: gray;">
+                                                       <p class="label"> formal science</p>
+                             
+         
+                              <p class="label">education</p>
 
+                              
+                    </div>
+                    <div>
+                          
+               
+                    </div>
+                    <div>
+                 
+
+                    
+                    </div>
+                           
+                </div>
+                     <div class="cols" >
+                    <div style="color: gray;">
+                             
+
+                             <p> <a style="color: grey;" class="details" href="https://www.linkedin.com/in/gggbg/" target="_blank">LinkedIn</a></p>
+                             <p> <a style="color: grey;" class="details" href="https://github.com/gergacio" target="_blank">GitHub</a></p>
+
+                       
+                    </div>
+                    <div>
+                          
+               
+                    </div>
+                    <div>
+                 
+
+                    
+                    </div>
+                           
+                </div>
+              
+                <p style="color: grey;" class=" bottom ">© 2026 </p>
             </div>
         </section>
 
-    </main>
-       <script>
-        function updateTime() {
-            const date = new Date();
-            const options = { month: 'long', day: 'numeric' };
-            const time = date.toLocaleTimeString();
-            const day = date.toLocaleDateString(undefined, options);
-            document.getElementById('time').innerHTML =
-                ` GMT ${time}`;
-        }
 
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
+  
+
+
+
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -257,19 +229,16 @@
 
         const sections = gsap.utils.toArray('section');
 
-        sections.forEach((section, i) => {
+       
             const container = section.querySelector('.container');
 
             if (i > 0) {
-                gsap.set(container, { rotation: 0 });
+                gsap.set(container, { rotation: 30 });
                 gsap.to(container, {
                     rotation: 0,
                     ease: 'none',
                     scrollTrigger: {
-                        trigger: section,
-                        start: 'top bottom',
-                        end: 'top 25%',
-                        scrub: true,
+                      
                     }
                 });
             }
@@ -284,6 +253,19 @@
                 });
             }
         });
+    </script>
+           <script>
+        function updateTime() {
+            const date = new Date();
+            const options = { month: 'long', day: 'numeric' };
+            const time = date.toLocaleTimeString();
+            const day = date.toLocaleDateString(undefined, options);
+            document.getElementById('time').innerHTML =
+                ` GMT ${time}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
     </script>
 </body>
 </html>
